@@ -1,0 +1,48 @@
+.header {
+    background-color: #1c292c;
+    color: white;
+    position: relative;
+    padding: 20px 0px 0px;
+    height: 255px;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.body {
+    font-size: large;
+}
+
+.timeselector {
+    width: 100%;
+}
+
+.timeselector-graph {
+    margin-top: 20px;
+}
+
+.timeselector-trackertext {
+    font-size: 12px;
+    color: white;
+    text-align: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba(255, 255, 255, 0.45);
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}

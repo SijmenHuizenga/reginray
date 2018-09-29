@@ -1,0 +1,21 @@
+{
+  "description": "send logs to aspicio",
+  "documentation": "-",
+  "entrypoint": ["/usr/bin/aspicio-log-driver"],
+  "interface": {
+    "types": ["docker.logdriver/1.0"],
+    "socket": "aspicio.sock"
+  },
+  "network": {
+    "type": "host"
+  },
+  "env": [
+    {
+      "Description": "The aspicio backend url",
+      "Name": "ASPICIO_BACKEND",
+      "Settable": [
+        "value"
+      ]
+    }
+  ]
+}
